@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Chat App</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Chat App</title>
 
-    
-    <!------ Style links ---------->
 
-    <link rel="stylesheet" href="css//bootstrap.min.css">
-<!-- <link rel="stylesheet" href="css/style.css"> -->
-<link rel="stylesheet" href="css/chat.css">
-<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" rel="stylesheet">
+  <!------ Style links ---------->
+
+  <link rel="stylesheet" href="css//bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <link rel="stylesheet" href="css/chat.css">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css"
+    rel="stylesheet">
 
 </head>
 
 <body id="LoginForm">
 
-<!-- <main>
+  <!-- <main>
     <div class="container-fluid">
         <div class="row">
         <div class="col-3">
@@ -59,80 +61,128 @@
     </div>
 </main> -->
 
-<div class="container">
-        <h3 class=" text-center">Chat Application</h3>
-        <div class="messaging">
-              <div class="inbox_msg">
-                <div class="inbox_people">
-                  <div class="headind_srch">
-                    <div class="recent_heading">
-                      <h4>Recent</h4>
-                    </div>
-                    <div class="srch_bar">
-                      <div class="stylish-input-group">
-                        <input type="text" class="search-bar"  placeholder="Search" >
-                        <span class="input-group-addon">
-                        <button type="button"> <i class="fa fa-search" aria-hidden="true"></i> </button>
-                        </span> </div>
-                    </div>
-                  </div>
-                  <div class="inbox_chat">
-                    <div class="chat_list active_chat">
-                      <div class="chat_people">
-                        <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
-                        <div class="chat_ib">
-                          <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
-                          <p>Test, which is a new approach to have all solutions 
-                            astrology under one roof.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+  <div class="container">
+    <h3 class=" text-center">Chat Application</h3>
+    <div class="messaging">
+      <div class="inbox_msg">
+        <div class="inbox_people">
+          <div class="headind_srch">
+            <div class="recent_heading">
+              <h4>Recent</h4>
+            </div>
+            <div class="srch_bar">
+              <div class="stylish-input-group">
+                <input type="text" class="search-bar" placeholder="Search">
+                <span class="input-group-addon">
+                  <button type="button"> <i class="fa fa-search" aria-hidden="true"></i> </button>
+                </span> </div>
+            </div>
+          </div>
+          <div class="inbox_chat">
+            <div class="chat_list active_chat">
+              <div class="chat_people">
+                <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+                <div class="chat_ib">
+                  <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
+                  <p>Test, which is a new approach to have all solutions
+                    astrology under one roof.</p>
                 </div>
-                <div class="mesgs">
-                  <div class="msg_history">
-                    <div class="incoming_msg">
-                      <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
-                      <div class="received_msg">
-                        <div class="received_withd_msg">
-                          <p id="messages"></p>
-                          <span class="time_date"> 11:01 AM    |    June 9</span>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- <div class="outgoing_msg">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mesgs">
+          <div class="msg_history">
+            <div class="incoming_msg">
+              <div class="received_msg">
+                <div class="received_withd_msg">
+                  <p id="messages"></p>
+                  <span class="time_date"></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="incoming_msg">
+              <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil">
+              </div>
+              <div class="received_msg">
+                <div class="received_withd_msg">
+                  <p>Test, which is a new approach to have</p>
+                  <span class="time_date"> 11:01 AM | Yesterday</span>
+                </div>
+              </div>
+            </div> -->
+            <!-- <div class="outgoing_msg">
                       <div class="sent_msg">
                         <p>Test which is a new approach to have all
                           solutions</p>
                         <span class="time_date"> 11:01 AM    |    June 9</span> </div>
                     </div> -->
-                
-                  </div>
-                  <div class="type_msg">
-                      <form action="" id="message-from">
-                            <div class="input_msg_write" >
-                                    <input type="text" class="write_msg" name="message" placeholder="Type a message" autofocus autocomplete="off"/>
-                                    <button class="msg_send_btn" type="submit"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
-                                    <button class="btn btn-secondary" type="button" id="send-location"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
-                                  </div>
-                      </form>
-                    
-                  </div>
-                </div>
+
+          </div>
+          <div class="type_msg">
+            <form action="" id="message-from">
+              <div class="input_msg_write">
+                <input type="text" class="write_msg" name="message" placeholder="Type a message" autofocus
+                  autocomplete="off" />
+                <button class="msg_send_btn" type="submit"><i class="fa fa-paper-plane-o"
+                    aria-hidden="true"></i></button>
+                <button class="btn btn-secondary" type="button" id="send-location"><i class="fa fa-paper-plane-o"
+                    aria-hidden="true"></i></button>
               </div>
-              
-              
-              <p class="text-center top_spac"> Design by <a target="_blank" href="#">Aki</a></p>
-              
-            </div></div>
+            </form>
+
+          </div>
+        </div>
+      </div>
 
 
+      <p class="text-center top_spac"> Design by <a target="_blank" href="#">Aki</a></p>
+
+    </div>
+  </div>
 
 
+<script id="message-template" type="text/template">
+  
+  <div class="incoming_msg">
+      <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil">
+      </div> 
+      <span>{{from}}</span>
+      <div class="received_msg">
+        <div class="received_withd_msg">
+          <p>{{text}}</p>
+          <span class="time_date">{{createAt}}</span>
+        </div>
+      </div>
+    </div>
+  
 
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="/js/libs/jquery-3.4.1.min.js"></script>
-    <script src="/js/chat.js"></script>
+</script>
+
+<script id="location-message-template" type="text/template">
+  
+  <div class="incoming_msg">
+      <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil">
+      </div> 
+      <span>{{from}}</span>
+      <div class="received_msg">
+        <div class="received_withd_msg">
+          <p><a href="{{url}}" target="_blank">My location</a></p>
+          <span class="time_date">{{createAt}}</span>
+        </div>
+      </div>
+    </div>
+  
+
+</script>
+
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/libs/jquery-3.4.1.min.js"></script>
+  <script src="/js/libs/moment.js"></script>
+  <script src="/js/libs/mustache.min.js"></script>
+  <script src="/js/chat.js"></script>
 </body>
-</html>
 
+</html>
