@@ -5,20 +5,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Chat App</title>
-</head>
-<body>
-    <p>This is Chat App</p>
 
-    <ol id="messages"></ol>
-    <form action="" id="message-from">
-        <input type="text" name="message" placeholder="Message" autofocus autocomplete="off">
-        <button>Send</button>
-    </form>
-    <button id="send-location">Send Location</button>
+    
+    <!------ Style links ---------->
+
+    <link rel="stylesheet" href="css//bootstrap.min.css">
+<!-- <link rel="stylesheet" href="css/style.css"> -->
+<link rel="stylesheet" href="css/chat.css">
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" rel="stylesheet">
+
+</head>
+
+<body id="LoginForm">
+
+<!-- <main>
+    <div class="container-fluid">
+        <div class="row">
+        <div class="col-3">
+            
+            <h1 class="form-heading" style="padding-left: 5px">Chat Application</h1>
+
+            <div class="form-controls"></div>
+        </div>
+        <div class="col-9">
+                <div class="form-controlss">
+                    <div class="chat">
+                            <ol id="messages"></ol>
+                    </div>
+                    <div class="msg">
+                         <form action="" id="message-from">
+
+                                    <div class="form-group">
+                                            
+                                            <input type="text" name="message" class="form-control"   aria-describedby="emailHelp" placeholder="Message" >
+                                          </div>
+                                    <button>Send</button>
+                            </form>
+                       <button id="send-location">Send Location</button>  
+
+                       <form id="message-from">
+                            <div class="form-group">
+                            <input type="text" name="message" class="form-control" placeholder="Message" >
+                            <button type="submit" class="btn btn-primary">Send</button>
+                            <button type="submit" class="btn btn-primary btn-lg btn-block" style="margin-top: 5px;">Send Message</button>
+                            </div>
+                        </form>
+                        <button id="send-location" class="btn btn-secondary btn-lg btn-block">Send location</button>
+                    </div>                          
+                </div>
+            </div>
+        </div>        
+    </div>
+</main> -->
+
+<div class="container">
+        <h3 class=" text-center">Chat Application</h3>
+        <div class="messaging">
+              <div class="inbox_msg">
+                <div class="inbox_people">
+                  <div class="headind_srch">
+                    <div class="recent_heading">
+                      <h4>Recent</h4>
+                    </div>
+                    <div class="srch_bar">
+                      <div class="stylish-input-group">
+                        <input type="text" class="search-bar"  placeholder="Search" >
+                        <span class="input-group-addon">
+                        <button type="button"> <i class="fa fa-search" aria-hidden="true"></i> </button>
+                        </span> </div>
+                    </div>
+                  </div>
+                  <div class="inbox_chat">
+                    <div class="chat_list active_chat">
+                      <div class="chat_people">
+                        <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+                        <div class="chat_ib">
+                          <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
+                          <p>Test, which is a new approach to have all solutions 
+                            astrology under one roof.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mesgs">
+                  <div class="msg_history">
+                    <div class="incoming_msg">
+                      <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+                      <div class="received_msg">
+                        <div class="received_withd_msg">
+                          <p id="messages"></p>
+                          <span class="time_date"> 11:01 AM    |    June 9</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <div class="outgoing_msg">
+                      <div class="sent_msg">
+                        <p>Test which is a new approach to have all
+                          solutions</p>
+                        <span class="time_date"> 11:01 AM    |    June 9</span> </div>
+                    </div> -->
+                
+                  </div>
+                  <div class="type_msg">
+                      <form action="" id="message-from">
+                            <div class="input_msg_write" >
+                                    <input type="text" class="write_msg" name="message" placeholder="Type a message" autofocus autocomplete="off"/>
+                                    <button class="msg_send_btn" type="submit"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+                                    <button class="btn btn-secondary" type="button" id="send-location"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+                                  </div>
+                      </form>
+                    
+                  </div>
+                </div>
+              </div>
+              
+              
+              <p class="text-center top_spac"> Design by <a target="_blank" href="#">Aki</a></p>
+              
+            </div></div>
+
+
+
+
 
     <script src="/socket.io/socket.io.js"></script>
     <script src="/js/libs/jquery-3.4.1.min.js"></script>
-    <script src="/js/index.js"></script>
+    <script src="/js/chat.js"></script>
 </body>
 </html>
 
