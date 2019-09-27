@@ -130,6 +130,19 @@ img{ max-width:100%;}
   top: 11px;
   width: 33px;
 }
+.msg_send_btn2 {
+  background: #05728f none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 17px;
+  height: 33px;
+  position: absolute;
+  right: 40px;
+  top: 11px;
+  width: 160px;
+}
 .messaging { padding: 0 0 50px 0;}
 .msg_history {
   height: 516px;
