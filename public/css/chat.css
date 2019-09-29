@@ -1,4 +1,6 @@
-
+body{
+  background-color: khaki;
+}
 
 .container{max-width:1170px; margin:auto;}
 img{ max-width:100%;}
@@ -6,7 +8,7 @@ img{ max-width:100%;}
   background: #f8f8f8 none repeat scroll 0 0;
   float: left;
   overflow: hidden;
-  width: 40%; border-right:1px solid #c4c4c4;
+  width: 30%; border-right:1px solid #c4c4c4;
 }
 .inbox_msg {
   border: 1px solid #c4c4c4;
